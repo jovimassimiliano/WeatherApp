@@ -6,6 +6,7 @@ var WeatherForm = React.createClass({
     var location = this.refs.location.value;
 
     this.props.onSearch(location);
+    this.refs.location.value = "";
   },
 
   render: function(){
